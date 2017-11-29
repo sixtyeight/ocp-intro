@@ -1,0 +1,34 @@
+## ```oc``` OpenShift command line client
+
+https://github.com/openshift/origin/tags : Release auswählen -> ```Downloads```: e.g. "openshift-origin-client-tools-v3.6.1-008f2d5-linux-64bit.tar.gz"
+
+#### Basic Commands:
+*  ```login```           Log in to a server
+*  ```logout```          End the current server session
+*  ```whoami```          Return information about the current session
+*  ```new-project```     Request a new project
+*  ```new-app```         Create a new application
+*  ```status```          Show an overview of the current project
+*  ```project```         Switch to another project
+*  ```projects```        Display existing projects
+
+#### Build and Deploy Commands:
+*  ```deploy```          View, start, cancel, or retry a deployment
+*  ```start-build```     Start a new build
+*  ```tag```             Tag existing images into image streams
+
+#### Application Management Commands:
+*  ```get```             Display one or many resources
+*  ```export```          Export resources so they can be used elsewhere
+*  ```describe```        Show details of a specific resource or group of resources
+*  ```edit```            Edit a resource on the server
+*  ```delete```          Delete one or more resources
+*  ```secrets```         Manage secrets
+
+#### Troubleshooting and Debugging Commands:
+*  ```logs```            Print the logs for a resource
+*  ```rsh```             Start a shell session in a pod
+*  ```rsync```           Copy files between local filesystem and a pod
+*  ```port-forward```    Forward one or more local ports to a pod
+*  ```debug```           Launch a new instance of a pod for debugging
+*  ```cp```              Copy files and directories to and from containers.

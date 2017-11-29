@@ -43,6 +43,7 @@ https://github.com/openshift/origin/tags : Release auswählen -> ```Downloads```
 #### Application Management Commands:
 *  ```get```             Display one or many resources
 *  ```export```          Export resources so they can be used elsewhere
+     * ```-o json```     output format json (defaults to yaml otherwise)
 *  ```describe```        Show details of a specific resource or group of resources
 *  ```edit```            Edit a resource on the server
 *  ```create```          Create a resource by filename or stdin
@@ -61,3 +62,9 @@ https://github.com/openshift/origin/tags : Release auswählen -> ```Downloads```
     * Eclipse Debugger (Java Remote Application)
     * Connect to a database inside the platform using a local tool (e.g. SQLDeveloper or Squirrel)
 *  ```debug```           Launch a new instance of a pod for debugging
+
+### ```jq``` JSON command line tool for JSON processing
+*   syntax highlighting
+*   query language
+*   supports transformation
+*   https://stedolan.github.io/jq/

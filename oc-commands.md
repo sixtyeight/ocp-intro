@@ -18,10 +18,17 @@ https://github.com/openshift/origin/tags : Release auswählen -> ```Downloads```
 *  ```login```           Log in to a server
 *  ```logout```          End the current server session
 *  ```whoami```          Return information about the current session
+    * ```-t``` Display the Token (this is as good as your Username/Password Login)
 *  ```new-project```     Request a new project
+    * usually project and purpose (e.g. stage)
+    * must be unique in cluster
 *  ```new-app```         Create a new application
+    * selects template and source
+    * creates stuff like routes too
+    * https://blog.openshift.com/getting-started-with-wildfly/
 *  ```status```          Show an overview of the current project
 *  ```project```         Switch to another project
+    * this effects all shells which share the config
 *  ```projects```        Display existing projects
 
 #### Build and Deploy Commands:
@@ -34,6 +41,7 @@ https://github.com/openshift/origin/tags : Release auswählen -> ```Downloads```
 *  ```export```          Export resources so they can be used elsewhere
 *  ```describe```        Show details of a specific resource or group of resources
 *  ```edit```            Edit a resource on the server
+*  ```create```          Create a resource by filename or stdin
 *  ```delete```          Delete one or more resources
 *  ```secrets```         Manage secrets
 

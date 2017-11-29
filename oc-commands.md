@@ -10,6 +10,11 @@ https://github.com/openshift/origin/tags : Release auswählen -> ```Downloads```
 
 - Multiple Login shells of the same Linux User "share" the same connection (e.g. changing the default project in one shell will effect the other shells as well).
 
+#### Shell completion
+* ```oc completion bash > oc_completion```
+* Put file into ```/etc/bash_completion.d```
+* https://eli.thegreenplace.net/2013/12/26/adding-bash-completion-for-your-own-tools-an-example-for-pss
+
 #### Options (available for all commands)
 * ```--token=```                  Use a secret token instead of username/password
 * ```-n``` or ```--namespace=```  Use the given namespace (project) for the command instead of the active project

@@ -50,9 +50,14 @@ https://github.com/openshift/origin/tags : Release auswählen -> ```Downloads```
 *  ```secrets```         Manage secrets
 
 #### Troubleshooting and Debugging Commands:
-*  ```logs```            Print the logs for a resource
 *  ```rsh```             Start a shell session in a pod
+    * available commands may differ between containers (as they are part of the image)
+*  ```logs```            Print the logs for a resource
+    * ```-f```           follow (like tail -f)
+    * ```-c <containername>```     select a specific container inside pod (if more than one)
 *  ```rsync```           Copy files between local filesystem and a pod
-*  ```port-forward```    Forward one or more local ports to a pod
-*  ```debug```           Launch a new instance of a pod for debugging
 *  ```cp```              Copy files and directories to and from containers.
+*  ```port-forward```    Forward one or more local ports to a pod
+    * Eclipse Debugger (Java Remote Application)
+    * Connect to a database inside the platform using a local tool (e.g. SQLDeveloper or Squirrel)
+*  ```debug```           Launch a new instance of a pod for debugging

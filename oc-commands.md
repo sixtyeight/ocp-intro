@@ -2,6 +2,18 @@
 
 https://github.com/openshift/origin/tags : Release auswählen -> ```Downloads```: e.g. "openshift-origin-client-tools-v3.6.1-008f2d5-linux-64bit.tar.gz"
 
+```oc --help``` shows an overview of the available commands
+
+```oc <command> -h``` shows a short descripton and usage examples ```oc new-project -h```
+
+- Client settings are located in the  ```.kube``` folder in the home directory
+
+- Multiple Login shells of the same Linux User "share" the same connection (e.g. changing the default project in one shell will effect the other shells as well).
+
+#### Options (available for all commands)
+* ```--token=```                  Use a secret token instead of username/password
+* ```-n``` or ```--namespace=```  Use the given namespace (project) for the command instead of the active project
+
 #### Basic Commands:
 *  ```login```           Log in to a server
 *  ```logout```          End the current server session
